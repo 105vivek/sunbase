@@ -1,0 +1,110 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .controls {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #form-builder {
+    min-height: 300px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .form-element {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    border-radius: 3px;
+    position: relative;
+  }
+  
+  .form-element .element-label {
+    font-weight: bold;
+  }
+  
+  .form-element .element-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .form-element .element-controls button {
+    margin-left: 5px;
+    padding: 5px 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .ui-sortable-placeholder {
+    border: 2px dashed #ccc;
+    background: #f0f0f0;
+    height: 50px;
+    visibility: visible !important;
+  }
+  
+  #edit-modal .form-group {
+    margin-bottom: 15px;
+  }
+  
+  #edit-modal label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #edit-modal input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  #select-options-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #select-options-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  #select-options-list li input {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  #select-options-list li button {
+    margin-left: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+  }
+  

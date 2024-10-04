@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>sunbase</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Visual Form Designer</h1>
+        <div class="controls">
+          <button id="add-input">Add Input</button>
+          <button id="add-select">Add Select</button>
+          <button id="add-textarea">Add Textarea</button>
+          <button id="save-form">Save Form</button>
+        </div>
+        <form id="form-builder">
+          <!-- Form elements will be dynamically inserted here -->
+        </form>
+      </div>
+    
+      <!-- Modal for editing element properties -->
+      <div id="edit-modal" title="Edit Element" style="display: none;">
+        <form id="edit-form">
+          <div class="form-group">
+            <label for="edit-label">Label:</label>
+            <input type="text" id="edit-label" name="label" required>
+          </div>
+          <div class="form-group">
+            <label for="edit-placeholder">Placeholder:</label>
+            <input type="text" id="edit-placeholder" name="placeholder">
+          </div>
+          <div class="form-group" id="select-options-group" style="display: none;">
+            <label>Options:</label>
+            <ul id="select-options-list">
+              <!-- Options will be dynamically inserted here -->
+            </ul>
+            <button type="button" id="add-option">Add Option</button>
+          </div>
+          <input type="hidden" id="edit-element-id">
+        </form>
+      </div>
+      <script src="/script.js"></script>
+</body>
+</html>
